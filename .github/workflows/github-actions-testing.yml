@@ -1,4 +1,4 @@
-ame: Testing the Python code
+name: Testing the Python code
 
 on:
   push:
