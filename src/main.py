@@ -12,7 +12,7 @@ def get_path_from_arguments(args) -> str:
                         help="Path to datafile")
     args = parser.parse_args(args)
     return args.path
-# fasdfasdfpy
+
 
 def main():
     path = get_path_from_arguments(sys.argv[1:])
