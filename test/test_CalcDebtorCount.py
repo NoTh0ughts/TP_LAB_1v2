@@ -80,7 +80,6 @@ class TestCalcDebtorCount:
         result = CalcDebtorCount().calc(data_and_result2[0])
         assert result == data_and_result2[1]
 
-
     def test_calc0(self, data_and_result0: tuple[DataType, int]) -> None:
         result = CalcDebtorCount().calc(data_and_result0[0])
         assert result == data_and_result0[1]
