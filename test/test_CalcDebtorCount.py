@@ -19,7 +19,7 @@ class TestCalcDebtorCount:
     def test_none_data(self, none_data: tuple[DataType, int]) -> None:
         with pytest.raises(TypeError) as ex:
             CalcDebtorCount().calc(none_data[0]) == none_data[1]
-            assert ex.type == OSError
+            assert ex.type == TypeError
 
     @pytest.fixture()
     def data_and_result0(self) -> tuple[DataType, int]:
