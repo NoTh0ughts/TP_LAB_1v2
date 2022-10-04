@@ -29,5 +29,6 @@ def main():
     debtorCount = CalcDebtorCount().calc(students)
     print("Debtor count: ", debtorCount)
 
+
 if __name__ == "__main__":
     main()
