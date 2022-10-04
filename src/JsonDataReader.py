@@ -13,11 +13,6 @@ class JsonDataReader(DataReader):
             data = json.load(file)
 
             for student in data:
-                result[student]: list[tuple[str,int]] = []
-                result[student] = [(y,x[y]) for x in data[student] for y in x]
-                #for item in [(y, int(x[y])) for x in data[student] for y in x]:
-                #    result[student].append((item[0], item[1]))
+                result[student]: list[tuple[str, int]] = []
+                result[student] = [(y, x[y]) for x in data[student] for y in x]
         return result
-
-
-#print(JsonDataReader().read("../data/data.json"))
